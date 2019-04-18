@@ -1,0 +1,43 @@
+package server3;
+
+import io.undertow.Handlers;
+import io.undertow.Undertow;
+import io.undertow.UndertowOptions;
+import io.undertow.client.*;
+import io.undertow.connector.ByteBufferPool;
+import io.undertow.io.Receiver;
+import io.undertow.protocols.ssl.UndertowXnioSsl;
+import io.undertow.server.DefaultByteBufferPool;
+import io.undertow.server.HttpHandler;
+import io.undertow.server.HttpServerExchange;
+import io.undertow.util.AttachmentKey;
+import io.undertow.util.Methods;
+import io.undertow.util.StringReadChannelListener;
+import io.undertow.util.StringWriteChannelListener;
+import org.xnio.*;
+import org.xnio.channels.StreamSinkChannel;
+import org.xnio.ssl.XnioSsl;
+
+public class Server3 {
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         
+        
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>hello</groupId>
+  <artifactId>hello-undertow</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <version.jackson>2.8.9</version.jackson>
+    <version.maven-shade-plugin>3.0.0</version.maven-shade-plugin>
+    <version.undertow>1.4.19.Final</version.undertow>
+  </properties>
+ 
